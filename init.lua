@@ -728,6 +728,13 @@ require('lazy').setup({
         'isort',
         'blade-formatter',
       })
+      if vim.fn.system { 'uname', '-m' } == 'aarch64\n' then
+        for i, v in ipairs(ensure_installed) do
+          if v == 'lua_ls' or v == 'stylua' then
+            table.remove(ensure_installed, i)
+          end
+        end
+      end
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       require('mason-lspconfig').setup {
