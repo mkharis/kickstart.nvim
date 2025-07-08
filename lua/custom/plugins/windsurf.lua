@@ -24,6 +24,10 @@ else
         enble_cmp_source = false,
         virtual_text = {
           enabled = true,
+          key_bindings = {
+            accept = '<C-g>',
+            clear = '<C-x>',
+          },
         },
       }
     end,
