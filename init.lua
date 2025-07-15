@@ -690,6 +690,7 @@ require('lazy').setup({
         vue_ls = {},
         pyright = {},
         intelephense = {},
+        gopls = {},
 
         lua_ls = {
           -- cmd = { ... },
