@@ -784,6 +784,7 @@ require('lazy').setup({
           vue = true,
           json = true,
           markdown = true,
+          yaml = true,
           python = true,
           blade = true,
         }
@@ -810,6 +811,7 @@ require('lazy').setup({
         vue = { 'prettier' },
         json = { 'prettier' },
         markdown = { 'prettier' },
+        yaml = { 'prettier' },
         python = { 'isort', 'black' },
         blade = { 'blade-formatter' },
       },
